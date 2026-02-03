@@ -1,0 +1,273 @@
+You are an expert team of full-stack engineers, AI architects, data scientists, cybersecurity specialists, and UI/UX designers.
+
+Build a production-grade, enterprise SaaS platform inspired by Palantir Technologies, with additional futuristic AI and automation capabilities.
+
+Project Name: ASS Intelligence Platform (or customizable)
+
+Goal:
+Create a scalable, secure, AI-powered data intelligence and decision-making platform for governments, enterprises, healthcare, defense, finance, manufacturing, and startups.
+
+--------------------------------------------------
+CORE MODULES
+--------------------------------------------------
+
+1. DATA INTEGRATION ENGINE
+- Connectors for:
+  - APIs
+  - Databases (SQL/NoSQL)
+  - IoT Devices
+  - Cloud Storage
+  - ERP/CRM
+  - Blockchain
+  - Satellites
+  - Sensors
+- Real-time + batch ingestion
+- ETL + ELT pipelines
+- Data validation & cleaning
+- Auto schema detection
+
+2. DATA OPERATING SYSTEM (Like Palantir Foundry)
+- Unified data workspace
+- Ontology system (entity-relationship modeling)
+- Knowledge graph builder
+- Version control for data
+- Data lineage tracking
+- Audit logs
+
+3. AI & MACHINE LEARNING HUB
+- AutoML
+- Model training dashboard
+- LLM integration (OpenAI, Claude, Local Models)
+- Predictive analytics
+- Risk analysis
+- Forecasting
+- Anomaly detection
+- Reinforcement learning
+- Digital twins
+- Simulation engines
+
+4. DECISION INTELLIGENCE SYSTEM (Like Gotham)
+- Scenario simulation
+- What-if analysis
+- Strategy planner
+- Mission planning
+- Supply chain optimizer
+- Threat detection
+- Resource allocation AI
+
+5. REAL-TIME COMMAND CENTER
+- Live dashboards
+- Map visualization (GIS)
+- Heatmaps
+- Timeline tracking
+- Event monitoring
+- Alert system
+- Incident response panel
+
+--------------------------------------------------
+ADVANCED FEATURES (MY TECHNOLOGY)
+--------------------------------------------------
+
+6. AGI-LIKE REASONING ENGINE
+- Multi-agent AI system
+- Self-learning models
+- Autonomous task planning
+- Reasoning chains
+- Memory system
+- Goal optimization
+
+7. BIO + HEALTH ANALYTICS MODULE
+- Genomics data support
+- Health prediction
+- Longevity analytics
+- Brain-computer interface support (future-ready)
+- Medical AI assistant
+
+8. SPACE & DEFENSE MODULE
+- Satellite tracking
+- Space traffic management
+- Asteroid mining analytics
+- Orbital simulations
+- Defense AI monitoring
+
+9. SMART AUTOMATION PLATFORM
+- No-code workflow builder
+- RPA bots
+- Autonomous agents
+- AI task marketplace
+- Process mining
+
+10. BLOCKCHAIN + WEB3 LAYER
+- On-chain analytics
+- Identity verification
+- Smart contract monitoring
+- DAO analytics
+- Crypto intelligence
+
+--------------------------------------------------
+SECURITY & COMPLIANCE
+--------------------------------------------------
+
+11. MILITARY-GRADE SECURITY
+- Zero-trust architecture
+- End-to-end encryption
+- MFA + Biometrics
+- Hardware security support
+- SOC dashboard
+- Intrusion detection
+
+12. COMPLIANCE ENGINE
+- GDPR
+- HIPAA
+- ISO 27001
+- SOC2
+- RBI / Indian compliance
+- Audit automation
+
+--------------------------------------------------
+FRONTEND (UI/UX)
+--------------------------------------------------
+
+13. DASHBOARD INTERFACE
+- Dark/light mode
+- Modular widgets
+- Drag & drop layout
+- Glassmorphism + minimal design
+- Command palette
+- AI chat interface
+
+Tech:
+- React + Next.js
+- Tailwind CSS
+- Framer Motion
+- Three.js for 3D visualization
+- D3.js charts
+
+--------------------------------------------------
+BACKEND ARCHITECTURE
+--------------------------------------------------
+
+14. BACKEND SYSTEM
+- Microservices architecture
+- API Gateway
+- Event-driven system
+- Kubernetes deployment
+- Edge computing support
+
+Tech:
+- Node.js + Python
+- FastAPI
+- PostgreSQL
+- MongoDB
+- Redis
+- Kafka
+- gRPC
+
+--------------------------------------------------
+AI ASSISTANT
+--------------------------------------------------
+
+15. BUILT-IN SUPER AI ASSISTANT
+- Natural language queries
+- Voice commands
+- Code generation
+- Data explanation
+- Strategy suggestions
+- Auto reporting
+
+--------------------------------------------------
+ENTERPRISE FEATURES
+--------------------------------------------------
+
+16. ORGANIZATION MANAGEMENT
+- Multi-tenant system
+- Role-based access
+- Team workspaces
+- Permission hierarchy
+
+17. MARKETPLACE
+- Plugin store
+- AI models marketplace
+- App store
+- Custom integrations
+
+--------------------------------------------------
+MONETIZATION
+--------------------------------------------------
+
+18. BUSINESS MODEL
+- Subscription plans
+- Pay-per-use AI
+- Enterprise licensing
+- White-label system
+- API monetization
+
+--------------------------------------------------
+DEPLOYMENT
+--------------------------------------------------
+
+19. CLOUD + EDGE SUPPORT
+- AWS
+- GCP
+- Azure
+- On-prem
+- Hybrid cloud
+- Edge devices
+
+20. DEVOPS
+- CI/CD
+- Auto scaling
+- Monitoring
+- Logging
+- Backup
+- Disaster recovery
+
+--------------------------------------------------
+OUTPUT REQUIREMENTS
+--------------------------------------------------
+
+Generate:
+
+1. Full folder structure
+2. Frontend code
+3. Backend code
+4. AI pipeline
+5. Database schema
+6. API documentation
+7. Deployment scripts
+8. Admin dashboard
+9. Security layer
+10. Sample datasets
+11. Demo workflows
+
+--------------------------------------------------
+QUALITY STANDARDS
+--------------------------------------------------
+
+- Enterprise-grade
+- Production-ready
+- Scalable
+- Secure
+- Modular
+- Documented
+- Clean architecture
+- Future-proof
+
+--------------------------------------------------
+SPECIAL INSTRUCTION
+--------------------------------------------------
+
+Think like you are building a trillion-dollar company platform.
+
+Optimize for:
+- Performance
+- AI supremacy
+- User experience
+- Global scalability
+- Long-term evolution
+
+Do NOT create a demo.
+Create a real system foundation.
+
+Start by generating the full architecture, then implement modules step-by-step.
+
