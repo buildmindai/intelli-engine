@@ -1,6 +1,7 @@
+import * as Icons from "lucide-react";
+
 import * as React from "react";
 import { Link } from "wouter";
-import { ArrowRight, ShieldCheck, Sparkles, Radar, Lock, Layers3 } from "lucide-react";
 
 import { GlassCard } from "@/components/GlassCard";
 import { BrandMark } from "@/components/BrandMark";
@@ -72,7 +73,7 @@ export default function Landing() {
               className="rounded-xl bg-primary text-primary-foreground shadow-[0_16px_60px_-30px_hsl(var(--primary)/0.8)] hover:shadow-[0_20px_72px_-34px_hsl(var(--primary)/0.9)] transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0"
               data-testid="landing-cta-login"
             >
-              Enter Console <ArrowRight className="ml-2 h-4 w-4" />
+              Enter Console <Icons.ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </div>
         </header>
@@ -85,7 +86,7 @@ export default function Landing() {
                 className="w-fit rounded-full border border-border/60 bg-card/40 px-3 py-1.5 text-xs font-semibold text-muted-foreground"
                 data-testid="landing-badge"
               >
-                <Sparkles className="mr-2 h-3.5 w-3.5 text-primary" />
+                <Icons.Sparkles className="mr-2 h-3.5 w-3.5 text-primary" />
                 Palantir-inspired, MVP-ready foundation
               </Badge>
 
@@ -108,7 +109,7 @@ export default function Landing() {
                   className="rounded-2xl bg-gradient-to-r from-primary to-primary/80 text-primary-foreground shadow-premium hover:-translate-y-0.5 hover:shadow-[0_36px_120px_-60px_hsl(var(--primary)/0.9)] transition-all duration-200"
                   data-testid="landing-primary"
                 >
-                  Get started <ArrowRight className="ml-2 h-4 w-4" />
+                  Get started <Icons.ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
                 <Link
                   href="/app/workspaces"
@@ -121,15 +122,15 @@ export default function Landing() {
 
               <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
                 <span className="inline-flex items-center gap-2 rounded-full border border-border/60 bg-card/30 px-3 py-1.5">
-                  <Lock className="h-3.5 w-3.5 text-primary" />
+                  <Icons.Lock className="h-3.5 w-3.5 text-primary" />
                   OIDC sessions
                 </span>
                 <span className="inline-flex items-center gap-2 rounded-full border border-border/60 bg-card/30 px-3 py-1.5">
-                  <Radar className="h-3.5 w-3.5 text-accent" />
+                  <Icons.Radar className="h-3.5 w-3.5 text-accent" />
                   Event telemetry
                 </span>
                 <span className="inline-flex items-center gap-2 rounded-full border border-border/60 bg-card/30 px-3 py-1.5">
-                  <Layers3 className="h-3.5 w-3.5 text-foreground/80" />
+                  <Icons.Layers3 className="h-3.5 w-3.5 text-foreground/80" />
                   Workspace-scoped
                 </span>
               </div>
@@ -174,7 +175,7 @@ export default function Landing() {
 
               <div className="mt-6 rounded-2xl border border-border/60 bg-[radial-gradient(circle_at_30%_25%,hsl(var(--accent)/0.12),transparent_60%),radial-gradient(circle_at_80%_70%,hsl(var(--primary)/0.14),transparent_55%)] p-4">
                 <div className="flex items-start gap-3">
-                  <ShieldCheck className="mt-0.5 h-5 w-5 text-primary" />
+                  <Icons.ShieldCheck className="mt-0.5 h-5 w-5 text-primary" />
                   <div className="min-w-0">
                     <div className="text-sm font-semibold">Built for compliance narratives</div>
                     <p className="mt-1 text-xs text-muted-foreground">
@@ -199,38 +200,44 @@ export default function Landing() {
 
           <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             <Feature
-              icon={LayoutDashboard}
+              icon={Icons.LayoutDashboard}
+
               title="Command Center"
               desc="Filter events by severity and stay on top of operational signal."
               testId="feature-command-center"
             />
             <Feature
-              icon={DatabaseZap}
+              icon={Icons.DatabaseZap}
+
               title="Data Sources"
               desc="Register connectors with typed configuration and status."
               testId="feature-data-sources"
             />
             <Feature
-              icon={Shapes}
+              icon={Icons.Shapes}
               title="Datasets"
               desc="Capture schema, descriptions, and source lineage."
               testId="feature-datasets"
             />
             <Feature
-              icon={Activity}
+              icon={Icons.Activity}
+
               title="Events"
               desc="Structured timelines for incident response and governance."
               testId="feature-events"
             />
             <Feature
-              icon={MessagesSquare}
+              icon={Icons.MessagesSquare}
+
               title="AI Assistant"
               desc="Workspace-aware chat: ask questions, get actionable answers."
               accent="accent"
               testId="feature-ai"
             />
             <Feature
-              icon={ShieldCheck}
+              icon={Icons.ShieldCheck}
+
+
               title="Security posture"
               desc="Session-backed auth and clean UX patterns for operators."
               testId="feature-security"
@@ -250,11 +257,11 @@ export default function Landing() {
 
                 <div className="mt-5 grid gap-3 sm:grid-cols-2">
                   {[
-                    { icon: ShieldCheck, t: "OIDC sessions", d: "Replit Auth-backed login flows." },
-                    { icon: Lock, t: "Cookies only", d: "Credentials included in every request." },
-                    { icon: Radar, t: "Signal first", d: "Severity filters and concise timelines." },
-                    { icon: Sparkles, t: "Premium motion", d: "Staggered entry and micro-interactions." },
-                  ].map(({ icon: Icon, t, d }) => (
+                    { icon: Icons.ShieldCheck, t: "OIDC sessions", d: "Replit Auth-backed login flows." },
+                    { icon: Icons.Lock, t: "Cookies only", d: "Credentials included in every request." },
+                    { icon: Icons.Radar, t: "Signal first", d: "Severity filters and concise timelines." },
+                    { icon: Icons.Sparkles, t: "Premium motion", d: "Staggered entry and micro-interactions." },
+                  ].map(({icon: Icon, t, d }) => (
                     <div key={t} className="flex gap-3 rounded-2xl border border-border/60 bg-card/40 p-4">
                       <div className="grid h-10 w-10 place-items-center rounded-2xl border border-border/60 bg-secondary/40">
                         <Icon className="h-5 w-5 text-primary" />
@@ -282,7 +289,7 @@ export default function Landing() {
                     className="mt-5 w-full rounded-2xl bg-gradient-to-r from-primary to-primary/80 text-primary-foreground shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/25 hover:-translate-y-0.5 transition-all duration-200"
                     data-testid="landing-trust-cta"
                   >
-                    Enter the console <ArrowRight className="ml-2 h-4 w-4" />
+                    Enter the console <Icons.ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </div>
               </div>

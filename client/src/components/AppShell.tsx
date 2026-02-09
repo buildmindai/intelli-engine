@@ -64,31 +64,41 @@ export function AppShell({
   const nav = [
     {
       label: "Command Center",
-      href: workspaceId ? `/app/workspaces/${workspaceId}/command-center` : "/app/workspaces",
+      href: workspaceId
+        ? `/app/workspaces/${workspaceId}/command-center`
+        : "/app/workspaces",
       icon: LayoutDashboard,
       testId: "nav-command-center",
     },
     {
       label: "Data Sources",
-      href: workspaceId ? `/app/workspaces/${workspaceId}/data-sources` : "/app/workspaces",
+      href: workspaceId
+        ? `/app/workspaces/${workspaceId}/data-sources`
+        : "/app/workspaces",
       icon: DatabaseZap,
       testId: "nav-data-sources",
     },
     {
       label: "Datasets",
-      href: workspaceId ? `/app/workspaces/${workspaceId}/datasets` : "/app/workspaces",
+      href: workspaceId
+        ? `/app/workspaces/${workspaceId}/datasets`
+        : "/app/workspaces",
       icon: Shapes,
       testId: "nav-datasets",
     },
     {
       label: "Events",
-      href: workspaceId ? `/app/workspaces/${workspaceId}/events` : "/app/workspaces",
+      href: workspaceId
+        ? `/app/workspaces/${workspaceId}/events`
+        : "/app/workspaces",
       icon: Activity,
       testId: "nav-events",
     },
     {
       label: "AI Assistant",
-      href: workspaceId ? `/app/workspaces/${workspaceId}/assistant` : "/app/workspaces",
+      href: workspaceId
+        ? `/app/workspaces/${workspaceId}/assistant`
+        : "/app/workspaces",
       icon: MessagesSquare,
       testId: "nav-ai-assistant",
     },
@@ -97,7 +107,10 @@ export function AppShell({
   return (
     <SidebarProvider>
       <div className="bg-aurora min-h-screen">
-        <Sidebar className="border-r border-sidebar-border/80" data-testid="app-sidebar">
+        <Sidebar
+          className="border-r border-sidebar-border/80"
+          data-testid="app-sidebar"
+        >
           <SidebarHeader className="gap-3 p-4">
             <BrandMark />
             <WorkspaceSwitcher currentWorkspaceId={workspaceId} />
@@ -123,19 +136,28 @@ export function AppShell({
                               "transition-all duration-200 ease-out",
                               "hover:bg-sidebar-accent/70 hover:text-sidebar-accent-foreground",
                               active &&
-                                "bg-sidebar-accent text-sidebar-accent-foreground ring-1 ring-primary/25 shadow-[0_18px_50px_-34px_hsl(var(--primary)/0.45)]"
+                                "bg-sidebar-accent text-sidebar-accent-foreground ring-1 ring-primary/25 shadow-[0_18px_50px_-34px_hsl(var(--primary)/0.45)]",
                             )}
                             data-testid={item.testId}
                           >
                             <span
                               className={cn(
                                 "grid h-8 w-8 place-items-center rounded-lg border border-border/60 bg-card/50",
-                                "group-hover:border-border group-hover:bg-card"
+                                "group-hover:border-border group-hover:bg-card",
                               )}
                             >
-                              <Icon className={cn("h-4 w-4", active ? "text-primary" : "text-foreground/80")} />
+                              <Icon
+                                className={cn(
+                                  "h-4 w-4",
+                                  active
+                                    ? "text-primary"
+                                    : "text-foreground/80",
+                                )}
+                              />
                             </span>
-                            <span className="text-sm font-semibold">{item.label}</span>
+                            <span className="text-sm font-semibold">
+                              {item.label}
+                            </span>
                             <ChevronRight className="ml-auto h-4 w-4 text-muted-foreground opacity-0 transition-opacity group-hover:opacity-100" />
                           </Link>
                         </SidebarMenuButton>
@@ -186,10 +208,16 @@ export function AppShell({
                 </Avatar>
 
                 <div className="min-w-0 flex-1">
-                  <div className="truncate text-sm font-semibold" data-testid="user-display">
+                  <div
+                    className="truncate text-sm font-semibold"
+                    data-testid="user-display"
+                  >
                     {isLoading ? "Loading…" : display}
                   </div>
-                  <div className="truncate text-xs text-muted-foreground" data-testid="user-email">
+                  <div
+                    className="truncate text-xs text-muted-foreground"
+                    data-testid="user-email"
+                  >
                     {user?.email ?? "—"}
                   </div>
                 </div>
@@ -218,7 +246,9 @@ export function AppShell({
               <div className="flex items-center gap-3">
                 <SidebarTrigger data-testid="sidebar-trigger" />
                 <div className="hidden sm:block">
-                  <div className="text-xs font-semibold text-muted-foreground">Workspace</div>
+                  <div className="text-xs font-semibold text-muted-foreground">
+                    Workspace
+                  </div>
                   <div className="text-sm font-semibold text-foreground/90">
                     {title ?? "Operations Console"}
                   </div>
