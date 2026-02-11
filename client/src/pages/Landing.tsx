@@ -52,21 +52,20 @@ export default function Landing() {
         <header className="flex items-center justify-between">
           <BrandMark />
           <div className="flex items-center gap-2">
-            <Link
-              <a href="#features">
-
+            <a
+              href="#features"
               className="hidden sm:inline-flex rounded-xl px-3 py-2 text-sm font-semibold text-foreground/80 transition-colors hover:text-foreground"
               data-testid="landing-nav-features"
             >
               Features
-            </Link>
-            <Link
-              <a href="#trust">
+            </a>
+            <a
+              href="#trust"
               className="hidden sm:inline-flex rounded-xl px-3 py-2 text-sm font-semibold text-foreground/80 transition-colors hover:text-foreground"
               data-testid="landing-nav-trust"
             >
               Trust
-            </Link>
+            </a>
             <Button
               onClick={() => {
                 window.location.href = "/api/login";
